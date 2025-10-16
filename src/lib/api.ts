@@ -56,8 +56,28 @@ export const api = {
     '/api/transactions',
     { method: 'POST', body: JSON.stringify(body), authToken } as any
   ),
+  updateTransaction: (
+    id: string,
+    body: { type: 'income'|'expense'; amount: number; category: string; description?: string; date: string },
+    authToken: string
+  ) => apiRequest<{ data: any }>(
+    `/api/transactions/${id}`,
+    { method: 'PUT', body: JSON.stringify(body), authToken } as any
+  ),
   deleteTransaction: (id: string, authToken: string) =>
-    apiRequest<{ ok: true }>(`/api/transactions/${id}`, { method: 'DELETE', authToken } as any)
+    apiRequest<{ ok: true }>(`/api/transactions/${id}`, { method: 'DELETE', authToken } as any),
+  checkAffordability: (body: { productName: string ; userIncome?: number; userExpenses?: number; productPrice?: number }, authToken: string) =>
+    apiRequest<{ 
+      success: boolean;
+      message: string;
+      data: {
+        productName: string;
+        productPrice: any;
+        monthlySavings: number;
+        monthsToAfford: number;
+        explanation: string;
+      }
+     }>(`/api/ai-playground`, { method: 'POST', body: JSON.stringify(body), authToken } as any)
 };
 
 

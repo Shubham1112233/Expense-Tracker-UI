@@ -257,20 +257,7 @@ body {
 }
 
 /* Responsive Enhancements */
-@media (max-width: 768px) {
-  .card-body {
-    padding: 1rem;
-  }
-  
-  .table-responsive {
-    border-radius: var(--border-radius);
-  }
-  
-  .btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-}
+
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
@@ -499,4 +486,50 @@ body {
     box-shadow: none !important;
     border: 1px solid #ddd !important;
   }
+}
+
+/* Enhanced Spinner */
+.spinner-grow {
+  width: 1rem;
+  height: 1rem;
+}
+
+.spinner-grow-sm {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.heading-title-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.ai-output-text {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .table-responsive {
+    border-radius: var(--border-radius);
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .heading-title-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .toast-container-msge {
+    top: auto !important;
+    bottom: 0 !important;
+  }
+
 }

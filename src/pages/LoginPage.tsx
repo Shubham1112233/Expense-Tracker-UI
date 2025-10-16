@@ -33,7 +33,7 @@ export default function LoginPage() {
           <div className="card-body p-4">
             <div className="text-center mb-4">
               <i className="bi bi-graph-up text-primary" style={{ fontSize: '3rem' }}></i>
-              <h2 className="mt-3 mb-1">Welcome Back</h2>
+              <h2 className="mt-3 mb-1">Welcome to FinanceAI 🧠💰</h2>
               <p className="text-muted">Sign in to your account</p>
             </div>
             
