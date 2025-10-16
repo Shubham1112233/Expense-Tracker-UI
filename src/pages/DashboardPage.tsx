@@ -488,7 +488,7 @@ export default function DashboardPage() {
         </div>
 
         {/* Category Chart */}
-        <div className="col-lg-4 my-5">
+        <div className="col-lg-4 my-5 my-sm-0">
           <div className="card">
             <div className="card-header">
               <h5 className="mb-0">
