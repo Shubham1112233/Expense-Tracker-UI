@@ -26,12 +26,7 @@ Notifications: OneSignal
 Deployment: Vercel
 
 
-🧾 License
-
-This project is licensed under the MIT License – feel free to use and modify.
-
 ✨ Author
 
 👨‍💻 Shubham Ekkaldevi
 
-React + Node.js Developer
