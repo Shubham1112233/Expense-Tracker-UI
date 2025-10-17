@@ -1,19 +1,38 @@
-Personal Finance Tracker - Frontend
+🧠 FinanceAI – AI-Powered Personal Finance Dashboard
 
-Setup
+FinanceAI helps users manage their income, expenses, and savings through intelligent insights powered by AI.
+Get monthly spending alerts, visualize category-based budgets, and receive smart affordability suggestions in real-time.
 
-1. Create `.env` with:
-   - `VITE_API_BASE_URL=https://expense-tracker-kmek.onrender.com`
-2. Install dependencies: `npm install`
-3. Run dev: `npm run dev`
+🚀 Features
 
-Pages
-- Signup `/signup`
-- Login `/login`
-- Dashboard `/` (requires login)
+✅ Track income and expenses easily
+✅ A unique Feature to check the affordability
+✅ View category-wise analytics with charts
+✅ Push notifications for overspending alerts
+✅ Secure authentication & personalized dashboard
+✅ Responsive design (mobile-friendly UI)
 
-Notes
-- Auth token stored in localStorage by `AuthContext`.
-- API client in `src/lib/api.ts` uses `VITE_API_BASE_URL`.
+🖼️ Preview
+
+(Add screenshot or GIF of your dashboard)
+
+<img width="1381" height="858" alt="image" src="https://github.com/user-attachments/assets/feb4480b-ce9a-4a9a-b9c3-c0b4a43b9613" />
+
+⚙️ Tech Stack
+
+Frontend: React.js, Tailwind CSS / Material UI, Axios
+Backend: Node.js, Express, MongoDB
+AI Integration: Hugging Face / OpenAI Router API
+Notifications: OneSignal
+Deployment: Vercel
 
 
+🧾 License
+
+This project is licensed under the MIT License – feel free to use and modify.
+
+✨ Author
+
+👨‍💻 Shubham Ekkaldevi
+
+React + Node.js Developer
