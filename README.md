@@ -14,9 +14,8 @@ Get monthly spending alerts, visualize category-based budgets, and receive smart
 
 🖼️ Preview
 
-(Add screenshot or GIF of your dashboard)
 
-<img width="1381" height="858" alt="image" src="https://github.com/user-attachments/assets/feb4480b-ce9a-4a9a-b9c3-c0b4a43b9613" />
+<img width="1000" height="750" alt="image" src="https://github.com/user-attachments/assets/feb4480b-ce9a-4a9a-b9c3-c0b4a43b9613" />
 
 ⚙️ Tech Stack
 
