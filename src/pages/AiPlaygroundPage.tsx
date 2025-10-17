@@ -42,8 +42,9 @@ export default function AiPlaygroundPage() {
       return;
     }
     try {
+      const formattedPrompt = `Answer in short my question is- ${productName}`;
       const response = await api.checkAffordability(
-        { productName },
+        { productName: formattedPrompt },
         token as string
       );
       setResult(response.data);
@@ -55,26 +56,14 @@ export default function AiPlaygroundPage() {
   };
 
   const formatAiOutput = (text: string) => {
-    // Remove all bold asterisks just in case
-    const cleanText = text.replace(/\*\*/g, '');
-
-    // Split on "Explanation:" to get the part after it
-    const explanationSplit = cleanText.split('Explanation:');
-    const beforeExplanation = explanationSplit[0]?.trim();
-    const explanationPart = explanationSplit[1]?.trim();
-
-    return (
-      <>
-        <span>{beforeExplanation}</span>
-        {explanationPart && (
-          <>
-            <br /><br />
-            <strong>Explanation: {explanationPart}</strong>
-          </>
-        )}
-      </>
-    );
+    let cleanText = text.replace(/\*\*/g, '');
+    cleanText = cleanText.replace(/\*/g, '');
+    cleanText = cleanText.replace(/#/g, '');
+    cleanText = cleanText.replace(/~/g, '');
+    cleanText = cleanText.replace(/`/g, '');
+    return cleanText.trim();
   };
+  
 
   return (
     <div className="container">
@@ -122,7 +111,7 @@ export default function AiPlaygroundPage() {
               <div className="card-body">
                 <h5 className="card-title">Result</h5>
                 <p className="card-text">
-                  {formatAiOutput(result.productDetails.aiOutput)}
+                  <strong>Explanation:{formatAiOutput(result.productDetails.aiOutput)}</strong> 
                 </p>
               </div>
             ) : null}
