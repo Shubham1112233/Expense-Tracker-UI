@@ -40,13 +40,11 @@ Triggers alerts when spending exceeds thresholds
 
 🖼️ Preview
 
-
 <img width="1000" height="750" alt="image" src="https://github.com/user-attachments/assets/feb4480b-ce9a-4a9a-b9c3-c0b4a43b9613" />
 
 ⚙️ Tech Stack
 
 Frontend
-
 React.js
 Tailwind CSS / Material UI
 Axios
